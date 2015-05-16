@@ -43,7 +43,7 @@ This folder contains files that comprise the course project assignment from the 
 
 --    b. create a dataframe that only contains the 68 columns of interest  -- SubjectID, Activity Code, and mean and std vars
 
-3. Use descriptive activity names to name the activities in the data set
+3.Use descriptive activity names to name the activities in the data set
 
 --    a.read in activity label names from file; V1 == activity id, V2 == long name
 --    b. assign an activity name to each entry based on the activity numbered label

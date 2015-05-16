@@ -29,9 +29,18 @@ Variable names from the original dataset follow the format
  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
+FEATURE names include multiple compoents that describe the source of information, type of measurement, and other details about transformations or calculated values
+
+* measurement source, accelerometer 'Acc', gyroscope 'Gyro'
+* features prepended with 't' denote time domain signals.
+* features are split into 'body' and 'gravity' acceleration signals
+* features prepended with 'f' have undergone a Fast Fourier Transform
+* features may be of 'body' or 'gravity'
+* details of the calculation of 'Jerk' and magnitude ('Mag') for features is in `features_info.txt`
+
 **Units**: Features of the original data set (and thus results of this analysis) are normalized and bounded within [-1,1].
 
-This analysis only extracted STATTYPES mean and std.
+This analysis only extracted STATTYPES mean and standard deviation (std).
 The column names are altered slightly from the original feature list to reflect name limitations in R.
 '-' and '()' have been replaced with '.'
 
